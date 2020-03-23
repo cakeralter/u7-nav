@@ -3,31 +3,26 @@
     <main>
       <div class="top">
         <div class="search-warpper">
-          <img
-            src="../../assets/nav_google.png"
-            alt="Google"
-            class="search-nav-img left"
-          >
-          <input
-            type="text"
-            class="search-ipt-txt"
-            placeholder="点击左侧图标可选择搜索引擎；按回车搜索"
-          >
-          <img
-            src="../../assets/nav_btn.png"
-            alt="搜索"
-            class="search-nav-img right"
-          >
+          <img src="../../assets/nav_google.png" alt="Google" class="search-nav-img left" />
+          <input type="text" class="search-ipt-txt" placeholder="点击左侧图标可选择搜索引擎；按回车搜索" />
+          <img src="../../assets/nav_btn.png" alt="搜索" class="search-nav-img right" />
         </div>
+      </div>
+      <div class="center">
+        <Menu />
       </div>
     </main>
   </div>
 </template>
 
 <script>
+import Menu from "../common/Menu";
 export default {
   data() {
     return {};
+  },
+  components: {
+    Menu
   }
 };
 </script>
