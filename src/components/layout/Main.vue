@@ -10,6 +10,9 @@
       </div>
       <div class="center">
         <Menu />
+        <Menu />
+        <Menu />
+        <Menu />
       </div>
     </main>
   </div>

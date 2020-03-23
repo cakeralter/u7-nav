@@ -9,7 +9,7 @@
         <div class="item">
           <div class="item-icon"></div>
           <div class="item-title">Java</div>
-          <div class="item-remark">Java Oracle</div>
+          <div class="item-remark">CSS 提供了 text-indent 属性,该属性可以方便地实现文本缩进。 通过使用 text-indent 属性,所有元素的第一行都可以缩进一个给定的长度,甚至该长度可以是负值。 这个...</div>
         </div>
       </div>
       <div class="menu-body menu-item"></div>
@@ -68,6 +68,7 @@ export default {};
   position: relative;
   height: calc(100% - 20px);
   margin: 10px;
+  overflow: hidden;
 }
 .item-icon {
   background: url(../../assets/nav_cofe.png) no-repeat center;
@@ -76,14 +77,27 @@ export default {};
   height: 35px;
   float: left;
   margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.menu-item:hover .item-icon {
+  transform: rotate(360deg);
 }
 .item-title {
   height: 35px;
   line-height: 35px;
   font-size: 15px;
-  color: #3b2c28;
+  color: #7e7e7e;
   font-weight: 700;
 }
+.menu-item:hover .item-title {
+  color: #ff8300;
+}
 .item-remark {
+  font-size: 12px;
+  color: #8c8c8c;
+  text-indent: 2em;
+  margin-left: 35px;
+  line-height: 20px;
 }
 </style>
